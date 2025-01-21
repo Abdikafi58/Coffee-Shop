@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop - Login</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.svg" alt="Coffee Shop Logo">
+        </div>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Login to Your Account</h1>
+            <form id="login-form" action="login.php" method="POST">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+            <div class="social-login">
+                <p>Or sign in with:</p>
+                <div class="social-icons">
+                    <a href="#" id="google-signin"><img src="images/google-logo.png" alt="Google Sign-In"></a>
+                    <a href="#" id="facebook-signin"><img src="images/facebook-logo.png" alt="Facebook Sign-In"></a>
+                    <a href="#" id="apple-signin"><img src="images/apple-logo.png" alt="Apple Sign-In"></a>
+                </div>
+            </div>
+            <p>Don't have an account? <a href="register.html">Register here</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Coffee Shop</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
